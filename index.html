@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地域社交文化振興組合 | 札幌から広がる、新たなご縁と価値。</title>
+    
+    <!-- Google Fonts: Noto Sans JP (Japanese) & Cormorant Garamond (Elegant Serif for English) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        theme: {
+                            base: '#FAF9F6', /* Pearl White / Ivory */
+                            surface: '#FFFFFF',
+                            textMain: '#3C3833', /* Elegant Charcoal Brown */
+                            textMuted: '#736B63',
+                            accent: '#D4AF37', /* Champagne Gold */
+                            accentHover: '#C5A030',
+                            border: '#E8E3DA', /* Subtle warm gray */
+                            error: '#9E3B33', /* Elegant muted red for errors */
+                            success: '#3B5E3C' /* Elegant muted green for success */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #3C3833;
+            background-color: #FAF9F6;
+            overflow-x: hidden;
+            letter-spacing: 0.1em; /* Generous letter spacing for elegance */
+            line-height: 2.2;
+        }
+
+        /* Elegant fade-up animation */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Form Input focus styling with Champagne Gold */
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 1px #D4AF37;
+        }
+
+        /* Subtle ambient background glow */
+        .ambient-glow {
+            position: absolute;
+            width: 60vw;
+            height: 60vw;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212,175,55,0.03) 0%, rgba(250,249,246,0) 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-theme-accent selection:text-white relative">
+
+    <header class="fixed w-full top-0 z-50 bg-theme-base/80 backdrop-blur-md border-b border-theme-border/50 py-5 transition-all duration-500">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="text-theme-textMain text-sm md:text-base font-medium tracking-[0.2em]">
+                地域社交文化振興組合
+            </span>
+        </div>
+    </header>
+
+    <section class="relative min-h-[80vh] flex items-center justify-center px-6 pt-24 overflow-hidden">
+        <div class="ambient-glow top-0 left-[-10%]"></div>
+        <div class="ambient-glow bottom-[-20%] right-[-10%]"></div>
+        
+        <div class="max-w-4xl mx-auto z-10 text-center relative mt-12">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl text-theme-textMain font-bold leading-[2] md:leading-[1.8] fade-up tracking-[0.15em]">
+                札幌から広がる、<br class="block">
+                新たなご縁と価値。
+            </h1>
+            
+            <div class="mt-16 fade-up delay-200 flex justify-center">
+                <div class="w-[1px] h-24 bg-gradient-to-b from-theme-accent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 relative bg-theme-surface">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="mb-16 fade-up flex flex-col items-center">
+                <span class="font-serif italic text-theme-accent text-3xl md:text-4xl mb-3 block tracking-widest">Greeting</span>
+                <h2 class="text-lg md:text-xl font-medium text-theme-textMuted tracking-[0.2em] relative pb-5">
+                    ごあいさつ
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-[1px] bg-theme-accent"></span>
+                </h2>
+            </div>
+
+            <div class="fade-up delay-100">
+                <div class="text-theme-textMain text-base md:text-lg font-light space-y-10 text-left md:text-center inline-block max-w-2xl leading-[2.4]">
+                    <p>
+                        このたび「地域社交文化振興組合」という任意団体を立ち上げる運びとなりました。
+                    </p>
+                    <p>
+                        札幌を拠点に、地元の政財界をはじめ、さまざまな分野でご活躍されている方々との異業種交流や、文化・教養に触れる機会を創出することを目的としています。
+                    </p>
+                    <p>
+                        単に名刺交換をするだけの場ではなく、人と人とのご縁から新しいつながりや価値が生まれる、そんな「社交の場」をつくっていきたいと考えています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 relative bg-theme-base">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="mb-16 fade-up flex flex-col items-center">
+                <span class="font-serif italic text-theme-accent text-3xl md:text-4xl mb-3 block tracking-widest">Activities</span>
+                <h2 class="text-lg md:text-xl font-medium text-theme-textMuted tracking-[0.2em] relative pb-5">
+                    月に一度の特別な時間
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-[1px] bg-theme-accent"></span>
+                </h2>
+            </div>
+
+            <div class="fade-up delay-100">
+                <div class="text-theme-textMain text-base md:text-lg font-light space-y-10 text-left md:text-center inline-block max-w-2xl leading-[2.4]">
+                    <p>
+                        歴史、芸術、科学、伝統など文化的な交流会やツアーなど知見を深める、文化的な催しを開催していく予定です。
+                    </p>
+                    <p>
+                        日本の豊かな文化を背景に、各界の第一線で活躍される皆さまとリラックスして語り合える上質な時間をご用意いたします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 relative bg-theme-surface">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="mb-16 fade-up flex flex-col items-center">
+                <span class="font-serif italic text-theme-accent text-3xl md:text-4xl mb-3 block tracking-widest">Message</span>
+                <h2 class="text-lg md:text-xl font-medium text-theme-textMuted tracking-[0.2em] relative pb-5">
+                    ご縁をもっと、面白く
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-[1px] bg-theme-accent"></span>
+                </h2>
+            </div>
+
+            <div class="fade-up delay-100">
+                <div class="text-theme-textMain text-base md:text-lg font-light space-y-8 text-center inline-block max-w-2xl leading-[2.4]">
+                    <p>
+                        そんな思いをお持ちの方がいらっしゃいましたら、<br class="hidden md:block">
+                        ぜひ組合員としてご参加ください。<br>
+                        一人ひとりとの繋がりが<br class="hidden md:block">
+                        新しい景色や、思いがけない未来を広げていく。<br>
+                        そんな出会いを楽しみにしております。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 relative bg-theme-base border-t border-theme-border">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-16 fade-up flex flex-col items-center">
+                <span class="font-serif italic text-theme-accent text-3xl md:text-4xl mb-3 block tracking-widest">Join Us</span>
+                <h2 class="text-lg md:text-xl font-medium text-theme-textMuted tracking-[0.2em] relative pb-5">
+                    組合に入会する
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-[1px] bg-theme-accent"></span>
+                </h2>
+            </div>
+
+            <div class="fade-up delay-100 bg-white p-8 md:p-14 shadow-[0_4px_40px_-10px_rgba(0,0,0,0.03)] border border-theme-border/50 relative">
+                
+                <!-- Error Banner -->
+                <div id="form-error-message" class="hidden mb-8 p-4 bg-[#FDF8F8] border border-theme-error/20 text-theme-error text-sm tracking-widest text-center flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span id="error-text"></span>
+                </div>
+
+                <!-- Success Banner -->
+                <div id="success-message" class="hidden text-center text-theme-textMain tracking-[0.15em] leading-[2.4] py-16">
+                    <span class="w-16 h-16 mx-auto flex items-center justify-center rounded-full border border-theme-accent text-theme-accent mb-8 bg-theme-accent/5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </span>
+                    <p class="text-lg">ご入会のお申し込み、<br class="block md:hidden">誠にありがとうございます。</p>
+                    <p class="text-sm text-theme-textMuted mt-4">内容を確認次第、担当者よりご連絡させていただきます。</p>
+                </div>
+
+                <form id="membership-form" class="space-y-8">
+                    <div>
+                        <label for="name" class="block text-sm text-theme-textMuted tracking-widest mb-3">名前 <span class="text-theme-accent text-xs ml-2">*</span></label>
+                        <input type="text" id="name" name="name" required class="w-full bg-theme-base border border-theme-border px-5 py-4 text-theme-textMain focus:outline-none transition-colors duration-300">
+                    </div>
+                    
+                    <div>
+                        <label for="address" class="block text-sm text-theme-textMuted tracking-widest mb-3">住所<span class="text-xs ml-2">(区まででOK)</span> <span class="text-theme-accent text-xs ml-2">*</span></label>
+                        <input type="text" id="address" name="address" required class="w-full bg-theme-base border border-theme-border px-5 py-4 text-theme-textMain focus:outline-none transition-colors duration-300">
+                    </div>
+                    
+                    <div>
+                        <label for="occupation" class="block text-sm text-theme-textMuted tracking-widest mb-3">ご職業 <span class="text-theme-accent text-xs ml-2">*</span></label>
+                        <input type="text" id="occupation" name="occupation" required class="w-full bg-theme-base border border-theme-border px-5 py-4 text-theme-textMain focus:outline-none transition-colors duration-300">
+                    </div>
+                    
+                    <div>
+                        <label for="contact" class="block text-sm text-theme-textMuted tracking-widest mb-3">連絡先<span class="text-xs ml-2">(メールアドレスかLINEID)</span> <span class="text-theme-accent text-xs ml-2">*</span></label>
+                        <input type="text" id="contact" name="contact" required class="w-full bg-theme-base border border-theme-border px-5 py-4 text-theme-textMain focus:outline-none transition-colors duration-300">
+                    </div>
+                    
+                    <div>
+                        <label for="introducer" class="block text-sm text-theme-textMuted tracking-widest mb-3">ご紹介者 <span class="text-xs ml-2">(いない場合は空欄でもOK)</span></label>
+                        <input type="text" id="introducer" name="introducer" class="w-full bg-theme-base border border-theme-border px-5 py-4 text-theme-textMain focus:outline-none transition-colors duration-300">
+                    </div>
+                    
+                    <div>
+                        <label for="comment" class="block text-sm text-theme-textMuted tracking-widest mb-3">コメント <span class="text-xs ml-2">(任意)</span></label>
+                        <textarea id="comment" name="comment" rows="4" class="w-full bg-theme-base border border-theme-border px-5 py-4 text-theme-textMain focus:outline-none transition-colors duration-300 resize-none"></textarea>
+                    </div>
+                    
+                    <div class="text-center pt-8">
+                        <button type="submit" class="inline-flex items-center justify-center px-16 py-4 font-normal text-white bg-theme-textMain hover:bg-[#2A2723] transition-colors duration-500 tracking-[0.2em] w-full md:w-auto relative overflow-hidden group">
+                            <span class="relative z-10 transition-transform duration-300 group-hover:tracking-[0.25em]">送信する</span>
+                            <div class="absolute inset-0 bg-theme-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0 opacity-20"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-theme-surface py-20 px-6 border-t border-theme-border text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-theme-textMain text-lg font-medium tracking-[0.2em] mb-10">
+                地域社交文化振興組合
+            </h3>
+            
+            <div class="flex flex-col items-center justify-center gap-4 text-sm text-theme-textMuted font-light tracking-[0.15em] mb-12">
+                <p>設立発起人<span class="mx-4">|</span>福山真弓</p>
+                <p>設立<span class="mx-4">|</span>2026年10月1日</p>
+                <p>活動開始<span class="mx-4">|</span>2026年10月2日</p>
+            </div>
+            
+            <p class="text-xs text-theme-textMuted/60 font-light tracking-[0.2em] uppercase font-serif">
+                &copy; 2026 Regional Social Culture Promotion Union.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // Intersection Observer for Elegant Fade-Up Animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1 
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-up');
+            fadeElements.forEach(el => observer.observe(el));
+        });
+
+        // Form Submit Logic (Google Apps Script Integration)
+        document.getElementById('membership-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page reload
+            
+            // Elements
+            const form = this;
+            const errorBox = document.getElementById('form-error-message');
+            const errorText = document.getElementById('error-text');
+            const successBox = document.getElementById('success-message');
+            const submitButton = form.querySelector('button[type="submit"]');
+            const buttonTextSpan = submitButton.querySelector('span');
+            const originalButtonText = buttonTextSpan.textContent;
+            
+            // Reset UI state
+            errorBox.classList.add('hidden');
+            errorText.textContent = '';
+            
+            function showError(msg) {
+                errorText.textContent = msg;
+                errorBox.classList.remove('hidden');
+                // Scroll slightly up to ensure error is visible
+                errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            
+            // Loading state
+            submitButton.disabled = true;
+            buttonTextSpan.textContent = '送信中...';
+            submitButton.classList.add('opacity-70', 'cursor-not-allowed');
+
+            // Gather data
+            const formData = new FormData(form);
+            
+            // Google Apps Script Web App URL
+            const GAS_URL = 'https://script.google.com/macros/s/AKfycbzxGrJ6Hk7ZzkF3qEKER475W7kE7zK6H7G-n5GObIwWLJ7RH185JMJTQBg4vhfKvCNl/exec';
+
+            // Send via fetch
+            fetch(GAS_URL, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    // Success UI
+                    form.classList.add('hidden');
+                    successBox.classList.remove('hidden');
+                    successBox.classList.add('fade-up', 'visible');
+                    successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    // Error from server
+                    showError('エラーが発生しました。入力内容をご確認いただき、再度お試しください。');
+                }
+            })
+            .catch(error => {
+                console.error('Submission Error:', error);
+                // Network or other error
+                showError('通信エラーが発生しました。インターネット環境をご確認の上、再度お試しください。');
+            })
+            .finally(() => {
+                // Restore button state
+                submitButton.disabled = false;
+                buttonTextSpan.textContent = originalButtonText;
+                submitButton.classList.remove('opacity-70', 'cursor-not-allowed');
+            });
+        });
+    </script>
+</body>
+</html>
